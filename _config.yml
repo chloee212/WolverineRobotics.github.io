@@ -1,8 +1,8 @@
-Maytitle: WolverineRobotics.github.io
+title: WolverineRobotics.github.io
 description: >- # this means to ignore newlines until "baseurl:"
   Website for WolverineRobotics
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https:/wolverinerobotics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wolverinerobotics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  WolverineRobotics
 
 # Build settings
@@ -12,10 +12,6 @@ plugins:
   - jekyll-paginate
 include: 
   - _pages
-collections: 
-  pages: 
-    output: true 
-    permalink: /:name/
 header_pages:
   - _pages/home.md
   - _pages/about.md
