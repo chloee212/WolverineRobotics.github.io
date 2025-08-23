@@ -9,5 +9,17 @@ github_username:  WolverineRobotics
 theme: minima
 plugins:
   - jekyll-feed
-
+include: 
+  - _pages
+collections: 
+  pages: 
+    output: true 
+    permalink: /:name/
+header_pages:
+  - _pages/home.md
+  - _pages/about.md
+  - _pages/events.md
+  - _pages/sponsors.md
+  - _pages/blog.md
+  - _pages/contact.md
 
