@@ -30,4 +30,4 @@ Run the Jekyll doctor to surface configuration or front matter issues:
 bundle exec jekyll doctor
 ```
 
-Page content lives under `_pages/`, long-form posts go inside `_blogs/`, and each page links to its own stylesheet under `assets/css/`.
+Page content lives under `_pages/`, long-form posts go inside `_blogs/`, and each page declares its own stylesheet under `assets/css/` via the front matter.

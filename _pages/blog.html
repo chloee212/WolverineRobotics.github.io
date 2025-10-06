@@ -1,85 +1,56 @@
 ---
-layout: null
+layout: base
 title: Blog
 permalink: /blog/
+body_class: page--blog
+stylesheets:
+  - blog
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} | Wolverine Robotics</title>
-  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
-</head>
-<body class="page page--blog">
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="{{ '/' | relative_url }}">Wolverine Robotics</a>
-      <nav class="site-nav" aria-label="Primary">
-        <a class="site-nav__link" href="{{ '/' | relative_url }}">Home</a>
-        <a class="site-nav__link" href="{{ '/about/' | relative_url }}">About</a>
-        <a class="site-nav__link" href="{{ '/events/' | relative_url }}">Events</a>
-        <a class="site-nav__link" href="{{ '/sponsors/' | relative_url }}">Sponsors</a>
-        <a class="site-nav__link" href="{{ '/blog/' | relative_url }}">Blog</a>
-        <a class="site-nav__link" href="{{ '/contact/' | relative_url }}">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="page-banner">
-    <div class="page-banner__inner">
-      <h1 class="page-banner__title">Team Updates</h1>
-      <p class="page-banner__subtitle">Introduce the type of stories you publish here—build diaries, competition recaps, outreach spotlights, and student features.</p>
+<section class="page-banner">
+  <div class="page-banner__inner">
+    <h1 class="page-banner__title">Team Updates</h1>
+    <p class="page-banner__subtitle">Introduce the type of stories you publish here—build diaries, competition recaps, outreach spotlights, and student features.</p>
+  </div>
+</section>
+
+<main class="main-content" id="main-content">
+  <section>
+    <header>
+      <h2>Latest Posts</h2>
+      <p>Posts are pulled automatically from files inside the <code>_blogs/</code> directory.</p>
+    </header>
+    {% assign recent_posts = site.blogs | sort: 'date' | reverse %}
+    {% if recent_posts == empty %}
+    <p class="empty-state">No posts yet. Add markdown files to <code>_blogs/</code> to populate this section.</p>
+    {% else %}
+    <div class="post-grid">
+      {% for post in recent_posts limit: 9 %}
+      <article class="post-card">
+        <header>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d, %Y' }}</time>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </header>
+        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        <footer>
+          <a href="{{ post.url | relative_url }}">Continue reading &rarr;</a>
+        </footer>
+      </article>
+      {% endfor %}
     </div>
+    {% endif %}
   </section>
 
-  <main class="main-content" id="main-content">
-    <section>
-      <header>
-        <h2>Latest Posts</h2>
-        <p>Posts are pulled automatically from files inside the <code>_blogs/</code> directory.</p>
-      </header>
-      {% assign recent_posts = site.blogs | sort: 'date' | reverse %}
-      {% if recent_posts == empty %}
-      <p class="empty-state">No posts yet. Add markdown files to <code>_blogs/</code> to populate this section.</p>
-      {% else %}
-      <div class="post-grid">
-        {% for post in recent_posts limit: 9 %}
-        <article class="post-card">
-          <header>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d, %Y' }}</time>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </header>
-          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-          <footer>
-            <a href="{{ post.url | relative_url }}">Continue reading &rarr;</a>
-          </footer>
-        </article>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </section>
-
-    <section>
-      <header>
-        <h2>Content Ideas</h2>
-        <p>Keep contributors inspired with recurring story themes.</p>
-      </header>
-      <ul class="blog-ideas">
-        <li>Build season weekly recaps with photos of prototypes and progress.</li>
-        <li>Competition strategy breakdowns, match analyses, and lessons learned.</li>
-        <li>Community outreach spotlights including camps, demonstrations, or mentorship.</li>
-        <li>Student or mentor profiles that share personal journeys in STEM.</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <p>&copy; {{ site.time | date: '%Y' }} Wolverine Robotics. All rights reserved.</p>
-      <p>Built with Jekyll.</p>
-    </div>
-  </footer>
-</body>
-</html>
+  <section>
+    <header>
+      <h2>Content Ideas</h2>
+      <p>Keep contributors inspired with recurring story themes.</p>
+    </header>
+    <ul class="blog-ideas">
+      <li>Build season weekly recaps with photos of prototypes and progress.</li>
+      <li>Competition strategy breakdowns, match analyses, and lessons learned.</li>
+      <li>Community outreach spotlights including camps, demonstrations, or mentorship.</li>
+      <li>Student or mentor profiles that share personal journeys in STEM.</li>
+    </ul>
+  </section>
+</main>

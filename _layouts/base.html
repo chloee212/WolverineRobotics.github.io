@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+  {% if page.stylesheets %}
+    {% for sheet in page.stylesheets %}
+  <link rel="stylesheet" href="{{ '/assets/css/' | append: sheet | append: '.css' | relative_url }}">
+    {% endfor %}
+  {% elsif page.stylesheet %}
+  <link rel="stylesheet" href="{{ '/assets/css/' | append: page.stylesheet | append: '.css' | relative_url }}">
+  {% endif %}
+</head>
+<body class="page {% if page.body_class %}{{ page.body_class }}{% endif %}">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ '/' | relative_url }}">Wolverine Robotics</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__link" href="{{ '/' | relative_url }}">Home</a>
+        <a class="site-nav__link" href="{{ '/about/' | relative_url }}">About</a>
+        <a class="site-nav__link" href="{{ '/events/' | relative_url }}">Events</a>
+        <a class="site-nav__link" href="{{ '/sponsors/' | relative_url }}">Sponsors</a>
+        <a class="site-nav__link" href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="site-nav__link" href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  {{ content }}
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; {{ site.time | date: '%Y' }} Wolverine Robotics. All rights reserved.</p>
+      <p>Built with Jekyll.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,115 +1,86 @@
 ---
-layout: null
+layout: base
 title: Sponsors
 permalink: /sponsors/
+body_class: page--sponsors
+stylesheets:
+  - sponsors
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} | Wolverine Robotics</title>
-  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/sponsors.css' | relative_url }}">
-</head>
-<body class="page page--sponsors">
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="{{ '/' | relative_url }}">Wolverine Robotics</a>
-      <nav class="site-nav" aria-label="Primary">
-        <a class="site-nav__link" href="{{ '/' | relative_url }}">Home</a>
-        <a class="site-nav__link" href="{{ '/about/' | relative_url }}">About</a>
-        <a class="site-nav__link" href="{{ '/events/' | relative_url }}">Events</a>
-        <a class="site-nav__link" href="{{ '/sponsors/' | relative_url }}">Sponsors</a>
-        <a class="site-nav__link" href="{{ '/blog/' | relative_url }}">Blog</a>
-        <a class="site-nav__link" href="{{ '/contact/' | relative_url }}">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="page-banner">
-    <div class="page-banner__inner">
-      <h1 class="page-banner__title">Support Wolverine Robotics</h1>
-      <p class="page-banner__subtitle">Explain why sponsorship matters, outline how funds are used, and celebrate partners who power the team.</p>
+<section class="page-banner">
+  <div class="page-banner__inner">
+    <h1 class="page-banner__title">Support Wolverine Robotics</h1>
+    <p class="page-banner__subtitle">Explain why sponsorship matters, outline how funds are used, and celebrate partners who power the team.</p>
+  </div>
+</section>
+
+<main class="main-content" id="main-content">
+  <section>
+    <header>
+      <h2>Donate Online</h2>
+      <p>Share instructions for financial contributions and what donors can expect in return.</p>
+    </header>
+    <p><a href="https://www.paypal.com/donate?token=942Y6Dg6Dh_zfbdW14HYPExC-x-0B4kpmKdifXgN8D_-FT_k3fnLbd3IJz0mgasGfXrSbs2ZM6_8jM2S" target="_blank" rel="noopener">Give through PayPal &rarr;</a></p>
+  </section>
+
+  <section>
+    <header>
+      <h2>Sponsorship Tiers</h2>
+      <p>Customize the offerings for each tier and tailor the pitch to your community.</p>
+    </header>
+    <div class="tier-grid">
+      <article class="tier-card">
+        <h3>Bronze</h3>
+        <p>Ideal for community partners looking to get involved for the first time.</p>
+        <ul>
+          <li>Logo on team website</li>
+          <li>Shout-out on social media</li>
+        </ul>
+      </article>
+      <article class="tier-card">
+        <h3>Silver</h3>
+        <p>Great for small businesses supporting parts, tools, or travel expenses.</p>
+        <ul>
+          <li>All Bronze benefits</li>
+          <li>Logo on robot and pit display</li>
+          <li>Signed team poster</li>
+        </ul>
+      </article>
+      <article class="tier-card">
+        <h3>Gold</h3>
+        <p>Perfect for organizations championing STEM growth in the community.</p>
+        <ul>
+          <li>All Silver benefits</li>
+          <li>On-site demo or presentation</li>
+          <li>Recognition at awards banquet</li>
+        </ul>
+      </article>
     </div>
   </section>
 
-  <main class="main-content" id="main-content">
-    <section>
-      <header>
-        <h2>Donate Online</h2>
-        <p>Share instructions for financial contributions and what donors can expect in return.</p>
-      </header>
-      <p><a href="https://www.paypal.com/donate?token=942Y6Dg6Dh_zfbdW14HYPExC-x-0B4kpmKdifXgN8D_-FT_k3fnLbd3IJz0mgasGfXrSbs2ZM6_8jM2S" target="_blank" rel="noopener">Give through PayPal &rarr;</a></p>
-    </section>
+  <section class="in-kind">
+    <header>
+      <h2>In-Kind Support</h2>
+      <p>Detail how equipment, materials, printing, catering, or professional services strengthen the team.</p>
+    </header>
+    <p>Add a form link or contact email here so donors can outline what they would like to contribute.</p>
+  </section>
 
-    <section>
-      <header>
-        <h2>Sponsorship Tiers</h2>
-        <p>Customize the offerings for each tier and tailor the pitch to your community.</p>
-      </header>
-      <div class="tier-grid">
-        <article class="tier-card">
-          <h3>Bronze</h3>
-          <p>Ideal for community partners looking to get involved for the first time.</p>
-          <ul>
-            <li>Logo on team website</li>
-            <li>Shout-out on social media</li>
-          </ul>
-        </article>
-        <article class="tier-card">
-          <h3>Silver</h3>
-          <p>Great for small businesses supporting parts, tools, or travel expenses.</p>
-          <ul>
-            <li>All Bronze benefits</li>
-            <li>Logo on robot and pit display</li>
-            <li>Signed team poster</li>
-          </ul>
-        </article>
-        <article class="tier-card">
-          <h3>Gold</h3>
-          <p>Perfect for organizations championing STEM growth in the community.</p>
-          <ul>
-            <li>All Silver benefits</li>
-            <li>On-site demo or presentation</li>
-            <li>Recognition at awards banquet</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+  <section>
+    <header>
+      <h2>Current Partners</h2>
+      <p>Replace the placeholders with sponsor logos, photo galleries, or testimonials.</p>
+    </header>
+    <ul class="partner-gallery">
+      <li>Partner Name 1</li>
+      <li>Partner Name 2</li>
+      <li>Partner Name 3</li>
+    </ul>
+  </section>
 
-    <section class="in-kind">
-      <header>
-        <h2>In-Kind Support</h2>
-        <p>Detail how equipment, materials, printing, catering, or professional services strengthen the team.</p>
-      </header>
-      <p>Add a form link or contact email here so donors can outline what they would like to contribute.</p>
-    </section>
-
-    <section>
-      <header>
-        <h2>Current Partners</h2>
-        <p>Replace the placeholders with sponsor logos, photo galleries, or testimonials.</p>
-      </header>
-      <ul class="partner-gallery">
-        <li>Partner Name 1</li>
-        <li>Partner Name 2</li>
-        <li>Partner Name 3</li>
-      </ul>
-    </section>
-
-    <section class="callout-banner">
-      <h2>Ready to Collaborate?</h2>
-      <p>Provide a direct outreach contact and outline the onboarding steps for new sponsors.</p>
-      <a href="{{ '/contact/' | relative_url }}">Contact the Team</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <p>&copy; {{ site.time | date: '%Y' }} Wolverine Robotics. All rights reserved.</p>
-      <p>Built with Jekyll.</p>
-    </div>
-  </footer>
-</body>
-</html>
+  <section class="callout-banner">
+    <h2>Ready to Collaborate?</h2>
+    <p>Provide a direct outreach contact and outline the onboarding steps for new sponsors.</p>
+    <a href="{{ '/contact/' | relative_url }}">Contact the Team</a>
+  </section>
+</main>
