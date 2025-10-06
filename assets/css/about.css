@@ -1,0 +1,75 @@
+.team-grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.team-grid article {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.values-list li {
+  background: rgba(255, 255, 255, 0.65);
+  border-left: 4px solid var(--color-gold);
+  padding: var(--space-sm);
+  border-radius: 0.35rem;
+}
+
+.leadership-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leadership-table th,
+.leadership-table td {
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  width: 3px;
+  background: rgba(2, 48, 71, 0.3);
+}
+
+.timeline li {
+  margin-left: 2.5rem;
+  margin-bottom: var(--space-sm);
+  padding-left: var(--space-sm);
+  border-left: 3px solid transparent;
+}
+
+.timeline li strong {
+  display: block;
+  color: var(--color-navy);
+}
+
+@media (max-width: 720px) {
+  .timeline::before {
+    left: 0.5rem;
+  }
+
+  .timeline li {
+    margin-left: 1.5rem;
+  }
+}

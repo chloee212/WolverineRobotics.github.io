@@ -1,0 +1,45 @@
+.post-grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.post-card {
+  display: grid;
+  gap: var(--space-xs);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.post-card header time {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.post-card header a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.post-card p {
+  color: var(--color-muted);
+}
+
+.post-card footer a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-gold);
+}
+
+.blog-ideas {
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+
+.empty-state {
+  padding: var(--space-sm);
+  border-radius: 0.5rem;
+  background: rgba(2, 48, 71, 0.05);
+}

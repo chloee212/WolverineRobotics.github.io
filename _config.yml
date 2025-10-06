@@ -1,25 +1,32 @@
 title: WolverineRobotics.github.io
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Website for WolverineRobotics
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https:/wolverinerobotics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  WolverineRobotics
+baseurl: ""
+url: "https://wolverinerobotics.github.io"
+github_username: WolverineRobotics
 
-# Build settings
 theme: minima
 plugins:
   - jekyll-feed
-include: 
+include:
   - _pages
-collections: 
-  pages: 
-    output: true 
+collections:
+  pages:
+    output: true
     permalink: /:name/
+  blogs:
+    output: true
+    permalink: /blog/:title/
+defaults:
+  - scope:
+      path: ""
+      type: blogs
+    values:
+      layout: post
 header_pages:
-  - _pages/home.md
-  - _pages/about.md
-  - _pages/events.md
-  - _pages/sponsors.md
-  - _pages/blog.md
-  - _pages/contact.md
-
+  - _pages/home.html
+  - _pages/about.html
+  - _pages/events.html
+  - _pages/sponsors.html
+  - _pages/blog.html
+  - _pages/contact.html

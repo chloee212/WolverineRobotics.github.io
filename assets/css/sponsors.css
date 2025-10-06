@@ -1,0 +1,46 @@
+.tier-grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.tier-card {
+  border-top: 4px solid var(--color-gold);
+  padding-top: var(--space-sm);
+}
+
+.tier-card ul {
+  padding-left: 1.25rem;
+}
+
+.in-kind {
+  border-left: 4px solid rgba(2, 48, 71, 0.2);
+}
+
+.partner-gallery {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.partner-gallery li {
+  list-style: none;
+  background: rgba(2, 48, 71, 0.04);
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.callout-banner {
+  display: grid;
+  gap: var(--space-xs);
+  background: linear-gradient(120deg, #023047, #035e7b);
+  color: #fff;
+  justify-items: start;
+}
+
+.callout-banner a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-gold);
+}

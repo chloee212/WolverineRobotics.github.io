@@ -1,0 +1,138 @@
+---
+layout: null
+title: About
+permalink: /about/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | Wolverine Robotics</title>
+  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}">
+</head>
+<body class="page page--about">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ '/' | relative_url }}">Wolverine Robotics</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__link" href="{{ '/' | relative_url }}">Home</a>
+        <a class="site-nav__link" href="{{ '/about/' | relative_url }}">About</a>
+        <a class="site-nav__link" href="{{ '/events/' | relative_url }}">Events</a>
+        <a class="site-nav__link" href="{{ '/sponsors/' | relative_url }}">Sponsors</a>
+        <a class="site-nav__link" href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="site-nav__link" href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="page-banner__inner">
+      <h1 class="page-banner__title">Who We Are</h1>
+      <p class="page-banner__subtitle">Share your mission, how the team formed, and the impact you strive to make at Mary Ward Catholic Secondary School and beyond.</p>
+    </div>
+  </section>
+
+  <main class="main-content" id="main-content">
+    <section>
+      <header>
+        <h2>Our Subteams</h2>
+        <p>Introduce each discipline and what students focus on throughout the season.</p>
+      </header>
+      <div class="team-grid">
+        <article>
+          <h3>Mechanical</h3>
+          <p>Outline responsibilities like prototyping, machining, robot assembly, and pit operations.</p>
+        </article>
+        <article>
+          <h3>Programming</h3>
+          <p>Describe controls, autonomous routines, scouting software, and data or analytics tools.</p>
+        </article>
+        <article>
+          <h3>Electrical</h3>
+          <p>Summarize wiring, pneumatics, sensor integration, and safety documentation.</p>
+        </article>
+        <article>
+          <h3>Business &amp; Outreach</h3>
+          <p>Explain sponsor relations, media, fundraising, and community outreach initiatives.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Core Values</h2>
+        <p>Capture the culture that guides students, mentors, and alumni.</p>
+      </header>
+      <ul class="values-list">
+        <li><strong>Gracious Professionalism:</strong> Capture what it looks like on and off the field.</li>
+        <li><strong>Inclusivity:</strong> Talk about how you welcome new members and build team culture.</li>
+        <li><strong>Innovation:</strong> Highlight how experimentation and curiosity drive your solutions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <header>
+        <h2>Leadership Team</h2>
+        <p>Introduce student leads, mentors, and advisors. Update the table as roles are filled.</p>
+      </header>
+      <table class="leadership-table">
+        <thead>
+          <tr>
+            <th scope="col">Role</th>
+            <th scope="col">Name</th>
+            <th scope="col">Focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Team Captain</td>
+            <td>To be announced</td>
+            <td>Overall coordination</td>
+          </tr>
+          <tr>
+            <td>Lead Mentor</td>
+            <td>To be announced</td>
+            <td>Mentor responsibilities</td>
+          </tr>
+          <tr>
+            <td>Strategy Lead</td>
+            <td>To be announced</td>
+            <td>Scouting, match planning</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <header>
+        <h2>Team History</h2>
+        <p>Provide a short timeline covering major milestones, awards, or seasons that matter most.</p>
+      </header>
+      <ol class="timeline">
+        <li>
+          <strong>2015</strong>
+          <span>Founding year notes and the story behind your rookie season.</span>
+        </li>
+        <li>
+          <strong>2019</strong>
+          <span>Highlight a playoff run, Chairman's submission, or signature outreach event.</span>
+        </li>
+        <li>
+          <strong>Today</strong>
+          <span>Explain what you are focused on this season and the goals ahead.</span>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; {{ site.time | date: '%Y' }} Wolverine Robotics. All rights reserved.</p>
+      <p>Built with Jekyll.</p>
+    </div>
+  </footer>
+</body>
+</html>

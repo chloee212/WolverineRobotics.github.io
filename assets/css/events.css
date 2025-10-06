@@ -1,0 +1,53 @@
+.event-cards {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.event-card header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.event-card time {
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.event-card footer {
+  margin-top: var(--space-xs);
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.outreach-callouts {
+  display: grid;
+  gap: var(--space-xs);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resources-grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.resources-grid article {
+  border: 1px solid rgba(2, 48, 71, 0.12);
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+  text-align: left;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid rgba(2, 48, 71, 0.1);
+}

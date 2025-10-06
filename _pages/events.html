@@ -1,0 +1,128 @@
+---
+layout: null
+title: Events
+permalink: /events/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | Wolverine Robotics</title>
+  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/events.css' | relative_url }}">
+</head>
+<body class="page page--events">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ '/' | relative_url }}">Wolverine Robotics</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__link" href="{{ '/' | relative_url }}">Home</a>
+        <a class="site-nav__link" href="{{ '/about/' | relative_url }}">About</a>
+        <a class="site-nav__link" href="{{ '/events/' | relative_url }}">Events</a>
+        <a class="site-nav__link" href="{{ '/sponsors/' | relative_url }}">Sponsors</a>
+        <a class="site-nav__link" href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="site-nav__link" href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="page-banner__inner">
+      <h1 class="page-banner__title">Upcoming Events</h1>
+      <p class="page-banner__subtitle">List competitions, outreach, and build sessions with dates, locations, and quick descriptions.</p>
+    </div>
+  </section>
+
+  <main class="main-content" id="main-content">
+    <section>
+      <header>
+        <h2>Season Schedule</h2>
+        <p>Use the cards for detailed event blurbs, registration info, and volunteer roles.</p>
+      </header>
+      <div class="event-cards">
+        <article class="event-card">
+          <header>
+            <time datetime="2024-02-10">Feb 10, 2024</time>
+            <h3>Kickoff Strategy Session</h3>
+          </header>
+          <p>Break down the game manual, brainstorm robot concepts, and assign early research tasks.</p>
+          <footer>Location: Team Workshop</footer>
+        </article>
+        <article class="event-card">
+          <header>
+            <time datetime="2024-03-25">Mar 25-27, 2024</time>
+            <h3>Ontario District Competition</h3>
+          </header>
+          <p>Share pit schedules, load-in requirements, volunteer needs, and spectator information.</p>
+          <footer>Venue: To be confirmed</footer>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Volunteer &amp; Outreach</h2>
+        <p>Promote demonstrations, workshops, or school events where students can get involved.</p>
+      </header>
+      <ul class="outreach-callouts">
+        <li>Publish volunteer sign-up links and permission forms.</li>
+        <li>Mention preparation meetings or training that helpers should attend.</li>
+        <li>Note key contacts for questions and day-of coordination.</li>
+      </ul>
+    </section>
+
+    <section>
+      <header>
+        <h2>Event Resources</h2>
+        <p>Surface checklists and guides to make travel and competition days smoother.</p>
+      </header>
+      <div class="resources-grid">
+        <article>
+          <h3>Travel Checklist</h3>
+          <p>Add packing lists, safety gear, dress code, and travel itinerary details.</p>
+        </article>
+        <article>
+          <h3>Parent Info</h3>
+          <p>Include spectator guides, cost breakdowns, and how families can support each event.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Past Highlights</h2>
+        <p>Archive previous events with results, photos, or recap summaries for quick reference.</p>
+      </header>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th scope="col">Season</th>
+            <th scope="col">Event</th>
+            <th scope="col">Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023</td>
+            <td>Ontario Provincial Championship</td>
+            <td>Quarterfinalist, Imagery Award</td>
+          </tr>
+          <tr>
+            <td>2022</td>
+            <td>Durham College District</td>
+            <td>Semi-finalist, Safety Award</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; {{ site.time | date: '%Y' }} Wolverine Robotics. All rights reserved.</p>
+      <p>Built with Jekyll.</p>
+    </div>
+  </footer>
+</body>
+</html>

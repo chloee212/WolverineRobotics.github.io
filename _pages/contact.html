@@ -1,0 +1,84 @@
+---
+layout: null
+title: Contact
+permalink: /contact/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | Wolverine Robotics</title>
+  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/contact.css' | relative_url }}">
+</head>
+<body class="page page--contact">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ '/' | relative_url }}">Wolverine Robotics</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__link" href="{{ '/' | relative_url }}">Home</a>
+        <a class="site-nav__link" href="{{ '/about/' | relative_url }}">About</a>
+        <a class="site-nav__link" href="{{ '/events/' | relative_url }}">Events</a>
+        <a class="site-nav__link" href="{{ '/sponsors/' | relative_url }}">Sponsors</a>
+        <a class="site-nav__link" href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="site-nav__link" href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="page-banner__inner">
+      <h1 class="page-banner__title">Get In Touch</h1>
+      <p class="page-banner__subtitle">Share how parents, sponsors, media, and prospective members can reach Wolverine Robotics.</p>
+    </div>
+  </section>
+
+  <main class="main-content" id="main-content">
+    <section>
+      <header>
+        <h2>Reach the Team</h2>
+        <p>Use the cards for address, emails, social profiles, or phone contacts.</p>
+      </header>
+      <div class="contact-grid">
+        <article class="contact-card">
+          <h3>Visit Us</h3>
+          <p>Mary Ward Catholic Secondary School<br>3200 Kennedy Rd<br>Scarborough, ON M1V 3S8</p>
+        </article>
+        <article class="contact-card">
+          <h3>Email</h3>
+          <p><a href="mailto:admin@5596.ca">admin@5596.ca</a></p>
+        </article>
+        <article class="contact-card">
+          <h3>Social</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/mwardrobotics" target="_blank" rel="noopener">Instagram @mwardrobotics</a></li>
+            <li><a href="https://www.youtube.com/channel/UCc_ybDiYBbnqDXTmhPu0V7w" target="_blank" rel="noopener">Mary Ward Robotics on YouTube</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="hours">
+      <header>
+        <h2>Office Hours</h2>
+        <p>Outline your regular meeting schedule, build nights, or open house opportunities.</p>
+      </header>
+      <p class="note">Example: Tuesdays and Thursdays, 3:30&ndash;6:30 PM in Room 102.</p>
+    </section>
+
+    <section class="media-banner">
+      <h2>Media &amp; Sponsor Inquiries</h2>
+      <p>Provide a direct contact or form for partners looking to collaborate or feature the team.</p>
+      <a href="https://www.paypal.com/donate?token=942Y6Dg6Dh_zfbdW14HYPExC-x-0B4kpmKdifXgN8D_-FT_k3fnLbd3IJz0mgasGfXrSbs2ZM6_8jM2S" target="_blank" rel="noopener">Make a Donation</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; {{ site.time | date: '%Y' }} Wolverine Robotics. All rights reserved.</p>
+      <p>Built with Jekyll.</p>
+    </div>
+  </footer>
+</body>
+</html>
